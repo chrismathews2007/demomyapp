@@ -1,68 +1,56 @@
 import React from "react";
-// import CustomCarousel from "./CarouselTopCategories"
 import CategoryItem, { CategoryItemProps } from "./CategoryItem";
 import CustomCarousel from "../Carousel/CustomCarousel";
+import CategoryLogo from "@/Images/amazon_logo.png";
 
 const ShopFromTopCategories: React.FC = () => {
   const categories: CategoryItemProps[] = [
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/5f2a3fb5cc0e0728f5768d8b67e3b308feee778d83518a3cce7a870c5d7f1155?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/0e3be14c4d5938aaf007150134e04c5701b6db18b287cb11f1b8e958ba1d675f?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/5f2a3fb5cc0e0728f5768d8b67e3b308feee778d83518a3cce7a870c5d7f1155?apiKey=092e5299facd4790b1e37a52ac69c71d&",
+      imageSrc: CategoryLogo,
       title: "Platform",
     },
   ];
