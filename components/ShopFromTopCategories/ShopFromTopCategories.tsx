@@ -2,6 +2,7 @@ import React from "react";
 import CategoryItem, { CategoryItemProps } from "./CategoryItem";
 import CustomCarousel from "../Carousel/CustomCarousel";
 import CategoryLogo from "@/Images/amazon_logo.png";
+import { FiChevronRight } from "react-icons/fi";
 
 const ShopFromTopCategories: React.FC = () => {
   const categories: CategoryItemProps[] = [
@@ -69,12 +70,7 @@ const ShopFromTopCategories: React.FC = () => {
         </h2>
         <div className="flex cursor-pointer items-center gap-1.5 text-base font-medium text-neutral-800">
           <span>View All</span>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2051de38d02724169611f7f1cd022f3331c9ebad77b0f14f89d88caf58bfebf9?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-            alt=""
-            className="aspect-square w-[18px]"
-          />
+          <FiChevronRight />
         </div>
       </header>
       <div className="mx-5 my-7 mt-2 border-t-2 border-gray-200"></div>

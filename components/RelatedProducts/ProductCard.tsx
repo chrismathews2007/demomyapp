@@ -1,4 +1,6 @@
 import React from "react";
+import { FaHeart } from "react-icons/fa";
+import { IoCartOutline } from "react-icons/io5";
 
 type ProductCardProps = {
   isNew?: boolean;
@@ -30,35 +32,21 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </div>
         )}
         <div className="flex items-start gap-0.5">
-          <div className="flex flex-col items-center">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/471924f4d235b08752032853860215b0ccc1179ec87e207945333299324d9eb4?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-              alt=""
-              className="aspect-square w-[41px] rounded-full border border-zinc-300"
-            />
+          <div className="flex flex-col items-center rounded-full border border-slate-300  p-4">
+            <FaHeart color="red" />
           </div>
         </div>
       </div>
       <img loading="lazy" src={imageSrc} alt={name} className="mt-16 aspect-[4.76] w-[254px] max-md:mt-10" />
       {!outOfStock ? (
         <button className="mt-16 flex gap-2 bg-white px-11 py-4 text-xs font-medium text-neutral-500 max-md:mt-10 max-md:px-5">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c581bd65500cf088bf76ddb51a1f71baa338cf9abc301e7a5f32cab4059a6bd?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-            alt=""
-            className="aspect-square w-3"
-          />
+          <IoCartOutline />
+
           <span className="my-auto">Add to cart</span>
         </button>
       ) : (
         <span className="mt-16 flex gap-1.5 bg-white px-10 py-4 text-xs font-medium text-red-600 max-md:mt-10 max-md:px-5">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1d5967dd6eb2a7b078b527dc86adde13523b5546e6bf0b83fea4ef8970e710d?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-            alt=""
-            className="aspect-[1.09] w-[13px]"
-          />
+          <IoCartOutline className="text-red-600" />
           Out of Stock
         </span>
       )}

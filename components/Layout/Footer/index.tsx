@@ -1,6 +1,9 @@
 import * as React from "react";
 import SubsribeFormComponent from "./SubsribeForm";
-
+import { FaFacebookF, FaInstagram, FaMapMarkerAlt, FaRegCopyright } from "react-icons/fa";
+import { TiSocialSkypeOutline } from "react-icons/ti";
+import { RiYoutubeLine } from "react-icons/ri";
+import { MdPhoneAndroid } from "react-icons/md";
 interface InfoSectionProps {
   title: string;
   items: string[];
@@ -26,26 +29,16 @@ const InfoSection: React.FC<InfoSectionProps> = ({ title, items }) => (
 const ContactInfo: React.FC<ContactInfoProps> = ({ email, address, phone }) => (
   <section className="flex flex-1 flex-col self-stretch text-xs text-white">
     <h2 className="text-base font-medium uppercase">CONTACT US</h2>
-    <p className="mt-10 leading-8 text-red-600">
+    <p className="mt-10 leading-8 ">
       If you have any query, please contact us <br />
       <span className="font-medium text-red-600">{email}</span>
     </p>
     <div className="mt-2.5 flex gap-1">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/2054dedbf5b07da265d1aa92077991302abd3c930eb81425ebc83feedac90705?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-        alt=""
-        className="aspect-square w-[30px] shrink-0"
-      />
+      <FaMapMarkerAlt className="text-[20px]" />
       <div className="my-auto flex-auto">{address}</div>
     </div>
     <div className="mt-5 flex gap-1 uppercase">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/40bc4ae9f57519779afd39f1f5b190840808be9770a43f89fb5c787712dc3a4c?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-        alt=""
-        className="aspect-square w-[30px] shrink-0"
-      />
+      <MdPhoneAndroid className="text-[20px]" />
       <div className="my-auto flex-auto">{phone}</div>
     </div>
   </section>
@@ -64,32 +57,10 @@ const Footer: React.FC = () => {
               ultricies et tortor nec laoreet.
             </p>
             <div className="mt-5 flex w-full gap-5">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/5ba3b02997467539b9da38bcb0333f2f164c4b544b3de13c375a2931a80b02ef?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-                alt=""
-                className="aspect-square w-[23px] shrink-0"
-              />
-              <div className="flex gap-4">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/f32e1c61d12c1fd11c9f14c781880f96df3e6eb545b9e09af53ed5bac088cc46?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-                  alt=""
-                  className="aspect-square w-[23px] shrink-0"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/bfc7fc06d9ab26f904738ec41f0407f345825d75246f05d9e8898a77f0aca188?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-                  alt=""
-                  className="aspect-[0.95] w-[22px] shrink-0"
-                />
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/4f72421fce502e6ba7ec792fe4204540b426ecdca7a00e45fa70f532581131fe?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-                  alt=""
-                  className="aspect-square w-[23px] shrink-0"
-                />
-              </div>
+              <FaFacebookF className="text-[20px]" />
+              <FaInstagram className="text-[20px]" />
+              <TiSocialSkypeOutline className="text-[20px]" />
+              <RiYoutubeLine className="text-[20px]" />
             </div>
           </section>
 
@@ -102,12 +73,7 @@ const Footer: React.FC = () => {
         <hr className="mt-20 h-[1px] shrink-0 border border-solid border-white bg-white max-md:mt-10 max-md:max-w-full" />
 
         <footer className="mt-8 flex gap-1.5 self-center text-xs text-white">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b43e17f0d967c33812292e1b9fc2c7615fc6c298e2ae3a81c56a9f2a72934f8?apiKey=092e5299facd4790b1e37a52ac69c71d&"
-            alt=""
-            className="aspect-square w-[18px] shrink-0"
-          />
+          <FaRegCopyright className="text-[20px]" />
           <p className="my-auto flex-auto">Copyright.2024.All Right Reserved</p>
         </footer>
       </section>
